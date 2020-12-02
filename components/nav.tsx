@@ -176,7 +176,8 @@ const Nav = () => {
                     active={
                       link.href === pathname ||
                       scroll.hover === link.href ||
-                      (pathname.length > link.href.length &&
+                      (link.href.length > 1 &&
+                        pathname.length > link.href.length &&
                         pathname.substring(0, link.href.length) === link.href)
                     }
                     onMouseEnter={() => setHover(link.href)}
@@ -231,7 +232,8 @@ const Nav = () => {
                   active={
                     link.href === pathname ||
                     scroll.hover === link.href ||
-                    (pathname.length > link.href.length &&
+                    (link.href.length > 1 &&
+                      pathname.length > link.href.length &&
                       pathname.substring(0, link.href.length) === link.href)
                   }
                   onMouseEnter={() => setHover(link.href)}
@@ -262,9 +264,9 @@ const Nav = () => {
             </div>
           ))}
 
-          <div className="collapse navbar-collapse">
+          <div className="w-100 pt-2 pb-3 d-flex justify-content-center align-items-center">
             <Link href="/join">
-              <MobileButton>Join Us</MobileButton>
+              <MobileButton className="mx-auto">Join Us</MobileButton>
             </Link>
           </div>
         </MobileNav>
@@ -484,9 +486,9 @@ const MobileItem = styled.a`
 `;
 
 const MobileButton = styled(Button)`
-  margin-top: 2rem;
+  margin: 0.75rem 0 !important;
   text-align: center;
-  width: 100%;
+  width: 100% !important;
 `;
 
 const MobileDropdown = styled.div`
