@@ -1,7 +1,7 @@
 import {rgba} from "polished";
 
 const primary = "#0052cc";
-const secondary = "172b4d";
+const secondary = "#172b4d";
 const white = "#ffffff";
 const light = rgba(primary, 0.5);
 
@@ -20,14 +20,16 @@ const theme = {
   fontSizes: {
     xs: "12px",
     sm: "14px",
+    smd: "15px",
     md: "16px",
     lg: "18px",
     xl: "20px",
-    xl2: "24px",
-    xl3: "28px",
-    xl4: "36px",
-    xl5: "48px",
-    xl6: "64px",
+    xl2: "22px",
+    xl3: "24px",
+    xl4: "28px",
+    xl5: "36px",
+    xl6: "48px",
+    heading: "70px"
   },
   breakpoints: {
     sm: 576,

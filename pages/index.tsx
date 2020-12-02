@@ -1,5 +1,12 @@
 import Head from "next/head";
 
 export default function Home() {
-  return <div />;
+  return (
+    <>
+      <Head>
+        <title>Index</title>
+      </Head>
+      <div />
+    </>
+  );
 }
