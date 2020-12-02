@@ -36,6 +36,10 @@ const links = [
         name: "Teams",
         href: "/teams",
       },
+      {
+        name: "Sponsors",
+        href: "/sponsors",
+      },
     ],
   },
   {
@@ -93,8 +97,8 @@ const links = [
     href: "/outreach",
     nested: [
       {
-        name: "Blog",
-        href: "/blog",
+        name: "Posts",
+        href: "/posts",
       },
       {
         name: "Calendar",

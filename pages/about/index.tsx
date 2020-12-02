@@ -1,11 +1,11 @@
 import Head from "next/head";
 import React from "react";
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Head>
-        <title>Home - 2381 Robotics</title>
+        <title>About - 2381 Robotics</title>
       </Head>
       <div />
     </>

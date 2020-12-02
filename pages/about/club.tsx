@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Home - 2381 Robotics</title>
+        <title>Club - 2381 Robotics</title>
       </Head>
       <div />
     </>
