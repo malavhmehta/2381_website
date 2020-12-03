@@ -1,4 +1,7 @@
+import { MapPin, Tool, User } from "react-feather";
+
 import Container from "../components/container";
+import Details from "../components/details";
 import Head from "next/head";
 import Hero from "../components/hero/textual";
 import Image from "../components/image";
@@ -15,6 +18,32 @@ const hero = {
   },
 };
 
+const about = {
+  title: "What does 2381 Robotics do?",
+  description:
+    "2381 Robotics is a club run in Colonel By Secondary School in Ottawa. We currently have three competitive teams, 2381C, 2381Y, and 2381Z, which meet several times a week in order to work on their robot for VEX Robotics Competitions.",
+  cards: [
+    {
+      icon: User,
+      title: "Who?",
+      description:
+        "Colonel By’s competitive teams are comprised of 40 dedicated high school students, joined by a common goal to collaborate, share knowledge and explore STEM fields.",
+    },
+    {
+      icon: MapPin,
+      title: "Where?",
+      description:
+        "2381 Robotics is a high school robotics club run at Colonel By Secondary School in Ottawa, Ontario. Our club welcomes a very diverse set of bright students coming from all over the city of Ottawa.",
+    },
+    {
+      icon: Tool,
+      title: "What?",
+      description:
+        "VEX is a game-based engineering challenge. 2381 teams are challenged to apply the engineering process to real-world problems in order to design, build, and program a robot for competitions.",
+    },
+  ],
+};
+
 export default function Home() {
   return (
     <>
@@ -28,6 +57,8 @@ export default function Home() {
           src="https://i.ibb.co/CMghFYT/2381c-robotics.jpg"
         />
       </Container>
+
+      <Details {...about} />
     </>
   );
 }

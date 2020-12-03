@@ -3,7 +3,6 @@ import { media, theme } from "../../styles";
 import { ArrowButton } from "../button";
 import Fade from "react-reveal/Fade";
 import Heading from "../heading";
-import Link from "next/link";
 import { rgba } from "polished";
 import styled from "styled-components";
 
