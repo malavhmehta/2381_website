@@ -1,4 +1,5 @@
 import { MapPin, Tool, User } from "react-feather";
+import Stat, { StatProps } from "../components/stats";
 
 import Container from "../components/container";
 import Details from "../components/details";
@@ -44,6 +45,31 @@ const about = {
   ],
 };
 
+const stats = [
+  {
+    value: 5,
+    label:
+      "years of competing in the VEX Robotics Challenge (since 2015 – present)",
+  },
+  {
+    value: 3,
+    label: "competitive VRC teams: 2381C, 2381Y and 2381Z",
+  },
+  {
+    value: 4,
+    label:
+      "seasons of VRC: In The Zone, Turning Point, Tower Takeover, Change Up",
+  },
+  {
+    value: 23,
+    label: "VEX tournaments in which 2381 has competed",
+  },
+  {
+    value: 32,
+    label: "awards received by the 2381 teams",
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -59,6 +85,13 @@ export default function Home() {
       </Container>
 
       <Details {...about} />
+      <div className="container">
+        <div className="row d-flex justify-content-center">
+          {stats.map((stat: StatProps) => (
+            <Stat {...stat} />
+          ))}
+        </div>
+      </div>
     </>
   );
 }
