@@ -1,5 +1,7 @@
+import Container from "../components/container";
 import Head from "next/head";
 import Hero from "../components/hero/textual";
+import Image from "../components/image";
 import React from "react";
 
 const hero = {
@@ -20,6 +22,12 @@ export default function Home() {
         <title>Home - 2381 Robotics</title>
       </Head>
       <Hero {...hero} />
+      <Container cls="mb-5 pb-5">
+        <Image
+          alt="2381 Robotics Team"
+          src="https://i.ibb.co/CMghFYT/2381c-robotics.jpg"
+        />
+      </Container>
     </>
   );
 }

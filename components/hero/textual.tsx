@@ -38,11 +38,7 @@ const Hero = ({ pretext, heading, lead, link }: TextualProps) => (
             )}
             {lead && <Lead>{lead}</Lead>}
 
-            {link && (
-              <Link href={link.href}>
-                <ArrowButton>{link.caption}</ArrowButton>
-              </Link>
-            )}
+            {link && <ArrowButton href={link.href}>{link.caption}</ArrowButton>}
           </Fade>
         </Wrapper>
       </div>

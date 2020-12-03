@@ -1,4 +1,5 @@
 import { ArrowRight } from "react-feather";
+import Link from "next/link";
 import { darken } from "polished";
 import styled from "styled-components";
 import { theme } from "../styles";
@@ -48,9 +49,11 @@ export const Right = styled(ArrowRight)`
 `;
 
 export const ArrowButton = (props) => (
-  <Button>
-    {props.children} <Right />
-  </Button>
+  <Link href={props.href}>
+    <Button {...props}>
+      {props.children} <Right />
+    </Button>
+  </Link>
 );
 
 export default Button;
