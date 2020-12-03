@@ -23,7 +23,7 @@ const Stat = ({ value, label }: StatProps) => (
 export default Stat;
 
 const Value = styled.h2`
-  color: ${colors.primary};
+  color: ${colors.secondary};
   font-size: ${fontSizes.xl5};
   ${media.md`font-size: ${fontSizes.xl6};`};
   font-weight: 600;

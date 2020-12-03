@@ -4,10 +4,11 @@ import path from "path";
 
 const posts_dir = path.join(process.cwd(), "posts");
 type PostMetadata = {
-  id: string;
+  post: string;
   title: string;
   date: string;
   summary: string;
+  image: string;
 }
 
 export const getSortedPostsData = () => {
@@ -20,7 +21,7 @@ export const getSortedPostsData = () => {
     const metadata = matter(postContent);
 
     return {
-      id,
+      post: id,
       ...metadata.data,
     };
   });

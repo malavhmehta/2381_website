@@ -3,7 +3,7 @@ import {rgba} from "polished";
 const primary = "#0052cc";
 const secondary = "#172b4d";
 const white = "#ffffff";
-const light = rgba(primary, 0.5);
+const light = "#f2f7ff";
 
 const theme = {
   colors: {

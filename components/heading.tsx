@@ -1,8 +1,7 @@
 import { media, theme } from "../styles";
+import styled, { css } from "styled-components";
 
-import { css } from "styled-components";
-
-const { colors } = theme;
+const { colors, fontSizes } = theme;
 
 const Heading = css`
   color: ${colors.secondary};
@@ -12,3 +11,10 @@ const Heading = css`
 `;
 
 export default Heading;
+
+export const Heading2 = styled.h2`
+  color: ${colors.secondary};
+  font-size: ${fontSizes.xl3};
+  ${media.md`font-size: ${fontSizes.xl4}`};
+  font-weight: 600;
+`;
