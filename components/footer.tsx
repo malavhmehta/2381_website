@@ -5,7 +5,6 @@ import Fade from "react-reveal/Fade";
 import Link from "next/link";
 import React from "react";
 import { links } from "./nav";
-import { rgba } from "polished";
 import styled from "styled-components";
 
 const { colors, fontSizes } = theme;
