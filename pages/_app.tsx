@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import { AppProps } from "next/app";
+import Footer from "../components/footer";
 import { GlobalStyle } from "../styles";
 import Head from "next/head";
 import Nav from "../components/nav";
@@ -52,6 +53,7 @@ function app({ Component, pageProps }: AppProps) {
         <GlobalStyle />
         <Nav />
         <Component {...pageProps} />
+        <Footer />
       </div>
     </>
   );

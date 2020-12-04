@@ -1,6 +1,7 @@
 import { MapPin, Tool, User } from "react-feather";
 import Stat, { StatProps } from "../components/stats";
 
+import { ArrowButton } from "../components/button";
 import CardImage from "../components/card/image";
 import CardText from "../components/card/text";
 import Container from "../components/container";
@@ -171,7 +172,7 @@ function Home({ posts }) {
       <div className="container mb-4 pb-3">
         <div className="row d-flex justify-content-center">
           {upcomingEvents.map((event) => (
-            <div className="col-12 col-lg-6 mb-4 pb-2" key={event.url}>
+            <div className="col-12 col-lg-6" key={event.url}>
               <a href={event.url} style={{ textDecoration: "none" }}>
                 <CardText
                   title={event.name}
@@ -185,11 +186,17 @@ function Home({ posts }) {
         </div>
       </div>
 
+      <Container cls="d-flex justify-content-center mb-5 pb-3">
+        <ArrowButton href="/outreach/calendar">
+          View all upcoming events
+        </ArrowButton>
+      </Container>
+
       <Container cls="mb-3 pb-3">
         <Heading2>2381 News</Heading2>
       </Container>
 
-      <div className="container mb-4 pb-3">
+      <div className="container mb-1">
         <div className="row d-flex justify-content-center">
           {posts.map((post) => (
             <div className="col-12 col-lg-6 mb-4 pb-2" key={post.post}>
@@ -211,6 +218,10 @@ function Home({ posts }) {
           ))}
         </div>
       </div>
+
+      <Container cls="d-flex justify-content-center mb-5 pb-3">
+        <ArrowButton href="/outreach/posts">View all posts</ArrowButton>
+      </Container>
     </>
   );
 }

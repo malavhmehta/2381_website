@@ -15,7 +15,7 @@ type LinksType = {
   nested?: any;
 };
 
-const links = [
+export const links = [
   {
     name: "Home",
     href: "/",
