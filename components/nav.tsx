@@ -57,12 +57,8 @@ export const links = [
     href: "/media",
     nested: [
       {
-        name: "Images",
-        href: "/images",
-      },
-      {
-        name: "Videos",
-        href: "/videos",
+        name: "Gallery",
+        href: "/gallery",
       },
       {
         name: "YouTube",

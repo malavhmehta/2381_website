@@ -1,11 +1,11 @@
 import Head from "next/head";
 import React from "react";
 
-export default function Images() {
+export default function Gallery() {
   return (
     <>
       <Head>
-        <title>Images - 2381 Robotics</title>
+        <title>Gallery - 2381 Robotics</title>
       </Head>
       <div />
     </>
