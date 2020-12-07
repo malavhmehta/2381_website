@@ -2,7 +2,6 @@ import { media, theme } from "../../styles";
 
 import Fade from "react-reveal/Fade";
 import Heading from "../heading";
-import Image from "../image";
 import Link from "../link";
 import styled from "styled-components";
 
@@ -21,7 +20,7 @@ type SectionProps = {
 const Section = ({ title, content, link }: SectionProps) => (
   <div className="container pt-2 mt-3">
     <div className="row">
-      <div className="col-12 mb-5">
+      <div className="col-12 mb-4">
         <Fade bottom>
           <Heading2 fontSize={{ base: fontSizes.xl4, md: fontSizes.xl5 }}>
             {title}
