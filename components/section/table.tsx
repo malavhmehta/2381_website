@@ -113,11 +113,11 @@ const Th = styled.th.attrs({ scope: "col" })`
 `;
 
 const Tr = styled.tr`
-  border: ${({ alt }) =>
+  border: ${({ alt }: { alt: boolean }) =>
     alt ? `1px solid ${rgba(colors.secondary, 0.08)}` : `none !important`};
   border-left: none !important;
   border-right: none !important;
-  background-color: ${({ alt }) =>
+  background-color: ${({ alt }: { alt: boolean }) =>
     alt ? `${rgba(colors.secondary, 0.025)}` : `${colors.white}`};
 `;
 
