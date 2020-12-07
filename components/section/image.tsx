@@ -17,10 +17,18 @@ type SectionProps = {
     ext?: boolean;
   };
   imageSrc: string;
+  imageTinted?: boolean;
   reverse?: boolean;
 };
 
-const Section = ({ title, content, link, imageSrc, reverse }: SectionProps) => (
+const Section = ({
+  title,
+  content,
+  link,
+  imageSrc,
+  imageTinted,
+  reverse,
+}: SectionProps) => (
   <div className="container mt-5 pt-5">
     <div className="row">
       <div
@@ -45,7 +53,11 @@ const Section = ({ title, content, link, imageSrc, reverse }: SectionProps) => (
         }`}
       >
         <div className={`m${reverse ? "r" : "l"}-lg-3`}>
-          <Image alt={title} src={imageSrc} />
+          <Image
+            alt={title}
+            src={imageSrc}
+            tinted={imageTinted == null ? true : imageTinted}
+          />
         </div>
       </div>
     </div>

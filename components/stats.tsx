@@ -9,12 +9,16 @@ const { colors, fontSizes } = theme;
 export type StatProps = {
   value: number;
   label: string;
+  pre?: string;
 };
 
-const Stat = ({ value, label }: StatProps) => (
+const Stat = ({ value, label, pre }: StatProps) => (
   <div className="col-12 col-sm-6 col-md-4 mb-5">
     <Fade bottom>
-      <Value>{value}</Value>
+      <Value>
+        {pre && pre}
+        {value === -1 ? "–" : value}
+      </Value>
       <Label>{label}</Label>
     </Fade>
   </div>
