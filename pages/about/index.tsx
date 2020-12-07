@@ -89,7 +89,7 @@ const sections = [
 const club = {
   title: "The Kernel Bye Robotics Club",
   description:
-    "At Robotics Club, it’s where the iterative design process, programming, and building come together to produce a competition robot to compete with all over the province, and more. We delve into 3D modelling CAD software to model out robotics on a computer, such as Autodesk Inventor, robot programming algorithms, and good build quality and practices, while learning about robot mechanisms, such as lifts, shooters, and intakes. ",
+    "Robotics Clubs is where the iterative design process, programming, and building come together to produce a competition robot to compete with all over the province, and more. We delve into 3D modelling CAD software to model out robotics on a computer, such as Autodesk Inventor, robot programming algorithms, and good build quality and practices, while learning about robot mechanisms, such as lifts, shooters, and intakes. ",
   cards: [
     {
       icon: Settings,

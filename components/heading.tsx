@@ -14,7 +14,7 @@ export default Heading;
 
 export const Heading2 = styled.h2`
   color: ${colors.secondary};
-  font-size: ${fontSizes.xl3};
-  ${media.md`font-size: ${fontSizes.xl4}`};
+  font-size: ${fontSizes.xl4};
+  ${media.md`font-size: ${fontSizes.xl5}`};
   font-weight: 600;
 `;

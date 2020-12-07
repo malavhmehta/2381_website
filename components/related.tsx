@@ -30,15 +30,17 @@ const Related = ({ links }: SectionProps) => (
       </div>
     </div>
 
-    <div className="row mb-4">
-      {links.map((link: LinkProps) => (
-        <Link href={link.href} key={hashCode(`related${link.href}`)}>
-          <Wrapper>
-            <StyledLink>{link.name}</StyledLink>
-          </Wrapper>
-        </Link>
-      ))}
-    </div>
+    <Fade bottom>
+      <div className="row mb-4">
+        {links.map((link: LinkProps) => (
+          <Link href={link.href} key={hashCode(`related${link.href}`)}>
+            <Wrapper>
+              <StyledLink>{link.name}</StyledLink>
+            </Wrapper>
+          </Link>
+        ))}
+      </div>
+    </Fade>
   </div>
 );
 
