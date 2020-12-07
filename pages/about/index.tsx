@@ -32,59 +32,59 @@ const hero = {
   },
 };
 
-const sections = [
-  {
-    title: "Who Are We?",
-    content:
-      "2381 Robotics is a high school robotics club run at Colonel By Secondary School in Ottawa, Ontario. Since its establishment in 2015, the club has inspired years of innovation and Colonel By with multiple competitive teams working on robots for VEX EDR Robotics Competitions where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete.",
-    imageSrc: "https://i.ibb.co/rsmcCM9/about2.jpg",
-    link: {
-      href: "/about/teams",
-      name: "See our teams",
+const about = {
+  title: "Who Are We?",
+  content:
+    "2381 Robotics is a high school robotics club run at Colonel By Secondary School in Ottawa, Ontario. Since its establishment in 2015, the club has inspired years of innovation and Colonel By with multiple competitive teams working on robots for VEX EDR Robotics Competitions where competitors are given a yearly challenge for which they must design, build, program, and drive a robot to complete.",
+  imageSrc: "https://i.ibb.co/rsmcCM9/about2.jpg",
+  link: {
+    href: "/about/teams",
+    name: "See our teams",
+  },
+};
+
+const values = {
+  title: "Our Values",
+  content:
+    "At 2381 Robotics, we believe in hard work, dedication, passion, and most importantly: having fun.",
+  items: [
+    {
+      reference: Tool,
+      title: "Hard Work",
+      description:
+        " Our club provides a productive workspace to prepare for competitions.",
     },
-  },
-  {
-    title: "Our Values",
-    content:
-      "At 2381 Robotics, we believe in hard work, dedication, passion, and most importantly: having fun.",
-    items: [
-      {
-        reference: Tool,
-        title: "Hard Work",
-        description:
-          " Our club provides a productive workspace to prepare for competitions.",
-      },
-      {
-        reference: Users,
-        title: "Dedication",
-        description:
-          "Members are always working with their team, even of outside meetings, to improve their robot.",
-      },
-      {
-        reference: Heart,
-        title: "Passion",
-        description:
-          "We believe that passion is a crucial part of working hard and necessary for success.",
-      },
-      {
-        reference: Smile,
-        title: "Fun",
-        description:
-          "At its core, 2381 Robotics is about having fun while learning and competing.",
-      },
-    ],
-  },
-  {
-    title: "Our Mission",
-    content:
-      "2381’s mission is to establish a platform to increase interest and involvement in STEM education through robotics. Since 2015, the club has inspired innovation at Colonel By, comprising of 3 competitive teams—2381C, 2381Y, and 2381Z—which participate in VEX Robotics Competitions. Our success has served as inspiration and paved a path for future teams as the club continues to grow.",
-    imageSrc: "https://i.ibb.co/M9pjdJK/about3.jpg",
-    link: {
-      href: "/outreach",
-      name: "Learn about our outreach programs",
+    {
+      reference: Users,
+      title: "Dedication",
+      description:
+        "Members are always working with their team, even of outside meetings, to improve their robot.",
     },
+    {
+      reference: Heart,
+      title: "Passion",
+      description:
+        "We believe that passion is a crucial part of working hard and necessary for success.",
+    },
+    {
+      reference: Smile,
+      title: "Fun",
+      description:
+        "At its core, 2381 Robotics is about having fun while learning and competing.",
+    },
+  ],
+};
+
+const mission = {
+  title: "Our Mission",
+  content:
+    "2381’s mission is to establish a platform to increase interest and involvement in STEM education through robotics. Since 2015, the club has inspired innovation at Colonel By, comprising of 3 competitive teams—2381C, 2381Y, and 2381Z—which participate in VEX Robotics Competitions. Our success has served as inspiration and paved a path for future teams as the club continues to grow.",
+  imageSrc: "https://i.ibb.co/M9pjdJK/about3.jpg",
+  link: {
+    href: "/outreach",
+    name: "Learn about our outreach programs",
   },
-];
+};
 
 const club = {
   title: "The Kernel Bye Robotics Club",
@@ -159,9 +159,9 @@ export default function About() {
         <title>About - 2381 Robotics</title>
       </Head>
       <Hero {...hero} />
-      <SectionImage {...sections[0]} />
-      <SectionList {...sections[1]} />
-      <SectionImage {...sections[2]} reverse={true} />
+      <SectionImage {...about} />
+      <SectionList {...values} />
+      <SectionImage {...mission} reverse={true} />
       <Details {...club} />
       <SectionTeam {...mentors} />
       <Related {...related} />
