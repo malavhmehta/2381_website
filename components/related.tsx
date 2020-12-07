@@ -33,11 +33,11 @@ const Related = ({ links }: SectionProps) => (
     <Fade bottom>
       <div className="row mb-4">
         {links.map((link: LinkProps) => (
-          <Link href={link.href} key={hashCode(`related${link.href}`)}>
-            <Wrapper>
+          <Wrapper key={hashCode(`related${link.href}`)}>
+            <Link href={link.href}>
               <StyledLink>{link.name}</StyledLink>
-            </Wrapper>
-          </Link>
+            </Link>
+          </Wrapper>
         ))}
       </div>
     </Fade>
