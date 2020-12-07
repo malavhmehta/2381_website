@@ -1,8 +1,8 @@
-import { media, theme } from "../styles";
+import { media, theme } from "../../styles";
 
 import Fade from "react-reveal/Fade";
-import Heading from "./heading";
-import Icon from "./icon";
+import Heading from "../heading";
+import Icon from "../icon";
 import styled from "styled-components";
 
 const { colors, fontSizes } = theme;
@@ -41,7 +41,7 @@ const Details = ({ title, description, cards }: DetailsProps) => (
         {cards.map((card: CardProps) => (
           <div className="col-12 col-sm-6 col-md-4 mt-5" key={card.title}>
             <Fade bottom>
-              <Icon reference={card.icon} color={colors.white} />
+              <Icon reference={card.icon} color={colors.white} opaque={false} />
               <Heading3
                 fontSize={{
                   base: fontSizes.xl,

@@ -35,8 +35,8 @@ const Footer = () => (
               {links.map(
                 (link) =>
                   link.nested && (
-                    <LinkWrapper>
-                      <Link href={link.href} key={`footer${link.href}`}>
+                    <LinkWrapper key={`footer${link.href}`}>
+                      <Link href={link.href}>
                         <MainLink>{link.name}</MainLink>
                       </Link>
 
@@ -77,7 +77,7 @@ const Brand = styled.h4`
 
 const BrandDescription = styled.p`
   color: ${colors.white};
-  font-size: ${fontSizes.smd};
+  font-size: ${fontSizes.sm};
   font-weight: 500;
   margin-bottom: 0.75rem;
   opacity: 0.4;
@@ -127,7 +127,7 @@ const MainLink = styled.a`
 const DropdownLink = styled.a`
   color: ${colors.white} !important;
   cursor: pointer;
-  font-size: ${fontSizes.smd};
+  font-size: ${fontSizes.md};
   font-weight: 600;
   margin: 0.5rem 0 0;
   opacity: 0.5;

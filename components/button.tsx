@@ -40,6 +40,17 @@ const Button = styled.a.attrs({
   }
 `;
 
+export const ButtonLight = styled(Button)`
+  background-color: ${colors.light} !important;
+  color: ${colors.primary} !important;
+
+  &:active,
+  &:hover {
+    background-color: ${darken(0.025, colors.light)} !important;
+    box-shadow: none !important;
+  }
+`;
+
 export const Right = styled(ArrowRight)`
   height: 22px;
   margin-left: 0.25rem;
@@ -53,6 +64,14 @@ export const ArrowButton = (props) => (
     <Button {...props}>
       {props.children} <Right />
     </Button>
+  </Link>
+);
+
+export const ArrowButtonLight = (props) => (
+  <Link href={props.href}>
+    <ButtonLight {...props}>
+      {props.children} <Right />
+    </ButtonLight>
   </Link>
 );
 

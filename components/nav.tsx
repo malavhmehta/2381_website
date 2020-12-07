@@ -25,10 +25,6 @@ export const links = [
     href: "/about",
     nested: [
       {
-        name: "Club",
-        href: "/club",
-      },
-      {
         name: "History",
         href: "/history",
       },

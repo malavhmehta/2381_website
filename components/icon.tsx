@@ -7,10 +7,13 @@ const renderSVG = (IconReference) => <IconReference size={"48"} />;
 type IconProps = {
   reference: any;
   color: string;
+  opaque?: boolean;
 };
 
-const Icon = ({ reference, color }: IconProps) => (
-  <StyledIcon color={color}>{renderSVG(reference)}</StyledIcon>
+const Icon = ({ reference, color, opaque }: IconProps) => (
+  <StyledIcon color={color} opaque={opaque === null ? true : opaque}>
+    {renderSVG(reference)}
+  </StyledIcon>
 );
 
 export default Icon;
@@ -29,7 +32,7 @@ const StyledIcon = styled.div`
   svg {
     color: ${({ color }) => color};
     height: 40%;
-    opacity: 0.5;
+    opacity: ${({ opaque }) => (opaque ? 1 : 0.5)};
     stroke-width: 2px;
     width: 450%;
     transition: ${theme.transition};

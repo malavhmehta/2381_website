@@ -5,7 +5,7 @@ import { ArrowButton } from "../components/button";
 import CardImage from "../components/card/image";
 import CardText from "../components/card/text";
 import Container from "../components/container";
-import Details from "../components/details";
+import Details from "../components/details/slanted";
 import Head from "next/head";
 import { Heading2 } from "../components/heading";
 import Hero from "../components/hero/textual";
@@ -169,10 +169,10 @@ function Home({ posts }) {
         <Heading2>Upcoming Events</Heading2>
       </Container>
 
-      <div className="container mb-4 pb-3">
+      <div className="container pb-3">
         <div className="row d-flex justify-content-center">
           {upcomingEvents.map((event) => (
-            <div className="col-12 col-lg-6" key={event.url}>
+            <div className="col-12 col-lg-6 mb-4" key={event.url}>
               <a href={event.url} style={{ textDecoration: "none" }}>
                 <CardText
                   title={event.name}
