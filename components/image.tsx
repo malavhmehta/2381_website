@@ -1,6 +1,5 @@
 import { media, theme } from "../styles";
 
-import Fade from "react-reveal/Fade";
 import styled from "styled-components";
 
 const { colors, fontSizes } = theme;
@@ -10,10 +9,10 @@ const Wrapper = styled.div`
   position: relative;
   transition: 0.4s ease-in-out;
   width: 100% !important;
-  ${media.sm`width: 90%`};
+  /* ${media.sm`width: 90%`};
   ${media.md`width: 85%`};
-  ${media.lg`width: 80%`};
-  z-index: 20;
+  ${media.lg`width: 80%`}; */
+  z-index: 5;
 
   &:before {
     background-color: ${colors.primary};
@@ -45,11 +44,9 @@ type ImageProps = {
 };
 
 const Image = ({ alt, src, tinted }: ImageProps) => (
-  <Fade bottom>
-    <Wrapper tinted={tinted == null ? true : tinted}>
-      <img className="img-fluid" alt={alt} src={src} />
-    </Wrapper>
-  </Fade>
+  <Wrapper tinted={tinted == null ? true : tinted}>
+    <img className="img-fluid" alt={alt} src={src} />
+  </Wrapper>
 );
 
 export default Image;

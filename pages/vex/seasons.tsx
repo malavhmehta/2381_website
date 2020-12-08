@@ -6,7 +6,6 @@ import Head from "next/head";
 import { Heading2 } from "../../components/heading";
 import Hero from "../../components/hero/pattern";
 import Related from "../../components/related";
-import SectionImage from "../../components/section/image";
 import SectionTable from "../../components/section/table";
 import SectionText from "../../components/section/text";
 import SectionVideo from "../../components/section/video";
@@ -101,9 +100,65 @@ const seasons = [
     },
     us: {
       title: "How did we do?",
-      content:
-        "There are sixty-six 66 Cubes on a Tower Takeover Field. Twenty-two (22) Green, twenty-two (22) Orange and, twenty-two (22) Purple. There are also seven (7) Towers placed around the field. Five (5) of these are neutral, with the remaining two being alliance specific. Alliance specific Towers may only be utilized by robots of the same alliance.",
-      imageSrc: "https://i.ibb.co/N29ZrHY/tower-takeover.jpg",
+      content: (
+        <>
+          2381A: Team 2381A was formed in the Tower Takeover season, and
+          contained students in sophomore and junior year. The captain being a
+          former member of the 2381Y team, 2381A attended 3 competitions where
+          their defense focused robots netted them many games - their best
+          performance was their #7 placement at the Lockheed Martin VEX EDR
+          Qualifier.
+          <br />
+          <br />
+          2381D: This team was formed as an all freshman team, similar to the
+          sophomore team (2381Y) founded the prior year. The team worked to
+          develop their skills for future years, and managed to qualify for
+          eliminations at Lockheed Martin VEX EDR Qualifier #2.
+          <br />
+          <br />
+          2381Z: 2381Z was formed by a group of aspiring juniors, and worked
+          tirelessly to create innovative ideas throughout the year, with their
+          transmission design initially as well as their 4-bar, breaking from
+          the 2bar traybot method that was common during the season. The team
+          attended 6 events, including a signature event in Massachusetts, and
+          nabbed 3 awards across the season. The team, unfortunately, was not
+          able to qualify for worlds due to a last-minute hardware failure, but
+          still accomplished a fair bit for their first year.
+          <br />
+          <br />
+          2381Y: The formerly rookie team founded in Turning Point showed
+          themselves to be competent once again, putting strong performances
+          across 2 provinces such as their semi-finalist spot at VRC Terrebonne,
+          as well as their 85 skills score. At the provincial championships,
+          their consistent autonomous and strong robot design led to their
+          placing 6th, and allying with 2381C, another Kernel Bye team. The team
+          unfortunately lost to the eventual world championship finalists (905A
+          / 4862B) in semi finals, but found themselves qualifying for worlds
+          through their skills score. At (virtual) worlds, the team ranked 49 in
+          their division, with a record of 4/5/2.
+          <br />
+          <br />
+          2381C: 2381C found itself in its prime, with a strong start to the
+          season, winning Excellence at the first competition they attended in
+          Quebec. Soon after, they racked up an impressive 6 trophies, including
+          being Tournament Champions 3 times. At provincials, the team ranked
+          13th with a record of 5/2/0, and placed an 85 skills score, just
+          missing qualification to the World Championship. Although the team did
+          not qualify, they had a very successful season, and established
+          themselves as an up and coming team in Ontario.
+          <br />
+          <br />
+          2381W: The final member of 2381X and a junior student affiliated with
+          Kernel Bye joined forces to create a new team within 2381. This team
+          performed consistently across the season, reaching finalists at their
+          first competition and semi-finalists at all others. At the provincial
+          level, the team went 5/2/0, placing them 19th in the provincial level.
+          The team was unfortunately knocked out in eliminations, but qualified
+          to worlds with the 38th ranked skills score in the world of 135. At
+          (virtual) worlds, 2381W went 7/4/0, placing them 26th in their
+          division.
+        </>
+      ),
     },
   },
   {
@@ -168,9 +223,42 @@ const seasons = [
     },
     us: {
       title: "How did we do?",
-      content:
-        "There are sixty-six 66 Cubes on a Tower Takeover Field. Twenty-two (22) Green, twenty-two (22) Orange and, twenty-two (22) Purple. There are also seven (7) Towers placed around the field. Five (5) of these are neutral, with the remaining two being alliance specific. Alliance specific Towers may only be utilized by robots of the same alliance.",
-      imageSrc: "https://i.ibb.co/VW6Py8m/turning-point.jpg",
+      content: (
+        <>
+          2381C: Team 2381C showed drastic improvements from their rookie
+          season, attending different competitions and putting up strong
+          performances at each one. Aside from the Lockheed Martin Qualifer #1,
+          the team’s W/L rate was always positive, notably at the second
+          qualifier where the team placed 2nd out of 16 teams, and won the
+          Innovate Award. The aforementioned award was received in consideration
+          of their unconventional design, a defensive 2bar cap-bot. Their final
+          award count was 3, including Tournament champions at Lockheed #2, and
+          placed strongly in the upper half at the Ontario provincials, ending
+          at 28th place.
+          <br />
+          <br />
+          2381Y: Turning Point was the season wherein 2381Y was created, a
+          sophomore team that consisted of most who were new to EDR at the time.
+          The team performed relatively well at their respective competitions,
+          having a positive W/L rate. Over the course of the season, the team
+          developed various well-thought out concepts, such as a catapult system
+          for flag possession, and their programming skills autonomous through
+          codebase improvements. Notable achievements over the year are the
+          Skills Champion award at the Lockheed Martin VEX EDR Qualifier, and
+          qualifying to provincials in their first year.
+          <br />
+          <br />
+          2381X: 2381X was formed as a branch-off team from the original, 2381C.
+          This team proved itself incredibly succesfull, as they dominated
+          competition across various competitions. The team, famously known for
+          their thin robots, attended 6 regular competitions - notably ranking
+          1st place at VRC Terrebonne in Quebec. Their robot was a well tuned
+          flywheel robot, leading them to success in amassing 9 awards over the
+          course of the season, as well as a provincial qualification. They
+          unfortunately missed worlds through a tough Ro16 match, and the team
+          number was retired thereafter as the members graduated.
+        </>
+      ),
     },
   },
   {
@@ -231,10 +319,19 @@ const seasons = [
     },
     us: {
       title: "How did we do?",
-      content:
-        "There are sixty-six 66 Cubes on a Tower Takeover Field. Twenty-two (22) Green, twenty-two (22) Orange and, twenty-two (22) Purple. There are also seven (7) Towers placed around the field. Five (5) of these are neutral, with the remaining two being alliance specific. Alliance specific Towers may only be utilized by robots of the same alliance.",
-      imageSrc:
-        "https://i.ibb.co/0YHf8rj/Screen-Shot-2020-12-07-at-5-30-16-PM.png",
+      content: (
+        <>
+          2381C: As the pioneering team in the organization, 2381C’s first year
+          was one wherein members were familiarizing themselves with the EDR
+          framework. The team attended 4 competitions, and although they were
+          not able to qualify for the provincial championship, 2381C had a
+          valuable first year - they won the Innovate Award at the iDesign VRC
+          event in Toronto, and ranked 4th in the Lockheed Martin Qualifier #2.
+          The team experimented with many concepts as they explored EDR and v4,
+          testing out passive claws, active claws, and a variety of other build
+          techniques to kick-start 2381’s involvement in VEX Robotics.
+        </>
+      ),
     },
   },
 ];
@@ -289,7 +386,7 @@ export default function Seasons() {
             <SectionVideo {...season.game} />
             <SectionText {...season.details} />
             <SectionTable {...season.scoring} />
-            <SectionImage {...season.us} />
+            <SectionText {...season.us} />
           </div>
         </div>
       ))}

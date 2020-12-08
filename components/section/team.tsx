@@ -73,12 +73,12 @@ const Wrapper = styled.div`
 const Title = styled.p`
   ${Heading};
   text-align: left !important;
-  margin: 0.8rem 1.5rem 0.4rem;
+  margin: 2rem 2rem 0.9rem;
 `;
 
 const Description = styled(Text)`
   text-align: left !important;
   font-size: ${fontSizes.smd};
-  padding: 0 1.5rem 0.25rem;
+  padding: 0 2rem 1.2rem;
   ${media.md`font-size: ${fontSizes.md}`};
 `;
