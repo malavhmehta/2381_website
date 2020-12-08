@@ -1,25 +1,23 @@
 import Container from "../../components/container";
+import Fade from "react-reveal/Fade";
 import Head from "next/head";
 import { Heading2 } from "../../components/heading";
 import Hero from "../../components/hero/pattern";
 import React from "react";
 import Related from "../../components/related";
-import { theme } from "../../styles";
-
-const { colors } = theme;
 
 const hero = {
-  heading: "Outreach",
+  heading: "2381 Calendar",
   lead:
-    "How 2381 Robotics has strived to create a positive impact on the robotics community.",
-  imageSrc: "https://i.ibb.co/zXC0sMQ/Screen-Shot-2020-12-07-at-5-51-27-PM.png",
+    "A calendar containing VEX tournaments that 2381 teams will be participating in.",
+  imageSrc: "https://i.ibb.co/fd9QmtW/massy-vanier.jpg",
   primary: {
     href: "/join",
     name: "Join Us",
   },
   secondary: {
-    href: "/vex/game",
-    name: "Event Calendar",
+    href: "/outreach",
+    name: "Outreach Programs",
   },
 };
 
@@ -30,8 +28,8 @@ const related = {
       href: "/outreach",
     },
     {
-      name: "Calendar",
-      href: "/outreach/calendar",
+      name: "Posts",
+      href: "/outreach/posts",
     },
   ],
 };
@@ -50,11 +48,13 @@ export default function Calendar() {
 
       <Container>
         <div className="embed-responsive embed-responsive-4by3">
-          <iframe
-            src="https://calendar.google.com/calendar/embed?src=c_vfnhf55v1r9ln5ok70tvqhbr78%40group.calendar.google.com&ctz=America%2FToronto"
-            className="embed-responsive-item"
-            scrolling="no"
-          ></iframe>
+          <Fade bottom>
+            <iframe
+              src="https://calendar.google.com/calendar/embed?src=c_vfnhf55v1r9ln5ok70tvqhbr78%40group.calendar.google.com&ctz=America%2FToronto"
+              className="embed-responsive-item"
+              scrolling="no"
+            ></iframe>
+          </Fade>
         </div>
       </Container>
 
@@ -62,5 +62,3 @@ export default function Calendar() {
     </>
   );
 }
-
-//

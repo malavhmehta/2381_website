@@ -227,7 +227,7 @@ function Home({ posts }) {
 }
 
 export async function getServerSideProps(context) {
-  let posts = getSortedPostsData().slice(0, 4);
+  let posts = getSortedPostsData().slice(0, 2);
   return { props: { posts } };
 }
 

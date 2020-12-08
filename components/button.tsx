@@ -1,6 +1,7 @@
+import { darken, rgba } from "polished";
+
 import { ArrowRight } from "react-feather";
 import Link from "next/link";
-import { darken } from "polished";
 import styled from "styled-components";
 import { theme } from "../styles";
 
@@ -27,7 +28,39 @@ const Button = styled.a.attrs({
 
   &:hover {
     transform: translateY(-0.5rem);
-    box-shadow: ${theme.boxShadow};
+    box-shadow: ${theme.boxShadow} ${rgba(colors.secondary, 0.2)};
+  }
+
+  &:focus {
+    box-shadow: none;
+  }
+
+  &:disabled {
+    cursor: no-drop;
+    opacity: 0.7;
+  }
+`;
+
+export const ClickButton = styled.button.attrs({ className: "btn" })`
+  background-color: ${colors.primary};
+  border-radius: 3px;
+  color: ${colors.white} !important;
+  font-size: ${fontSizes.smd};
+  font-weight: 600;
+  padding: 0.8rem 1.4rem;
+  transition: ${theme.transition};
+  transform: none;
+
+  &:active,
+  &:hover {
+    background-color: ${darken(0.1, colors.primary)};
+    text-decoration: none;
+    outline: none;
+  }
+
+  &:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: ${theme.boxShadow} ${rgba(colors.secondary, 0.2)};
   }
 
   &:focus {

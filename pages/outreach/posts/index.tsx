@@ -10,7 +10,7 @@ import { getSortedPostsData } from "../../../util/posts";
 const hero = {
   heading: "Posts",
   lead: "Sell all of 2381 Robotics' posts on the page below.",
-  imageSrc: "https://i.ibb.co/zXC0sMQ/Screen-Shot-2020-12-07-at-5-51-27-PM.png",
+  imageSrc: "https://i.ibb.co/cyY1Whj/season-head.jpg",
   primary: {
     href: "/join",
     name: "Join Us",
