@@ -20,7 +20,7 @@ const Wrapper = styled.div`
     bottom: 0;
     content: "";
     left: 0;
-    opacity: ${({ tinted }) => (tinted ? 0.6 : 0)};
+    opacity: ${({ tinted }) => (tinted ? 0.5 : 0)};
     position: absolute;
     right: 0;
     top: 0;
@@ -28,7 +28,7 @@ const Wrapper = styled.div`
   }
 
   &:hover:before {
-    opacity: ${({ tinted }) => (tinted ? 0.45 : 0)};
+    opacity: ${({ tinted }) => (tinted ? 0.35 : 0)};
   }
 
   img {

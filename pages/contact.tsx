@@ -31,8 +31,8 @@ const socials = [
   },
   {
     platform: "Email us",
-    link: "mailto:allentao7@gmail.com",
-    label: "allentao7@gmail.com",
+    link: "mailto:2381kernel.bye@gmail.com",
+    label: "2381kernel.bye@gmail.com",
   },
 ];
 

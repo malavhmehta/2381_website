@@ -75,10 +75,6 @@ export const links = [
         href: "/tips",
       },
       {
-        name: "Process",
-        href: "/process",
-      },
-      {
         name: "Files",
         href: "/files",
       },
