@@ -16,7 +16,7 @@ const hero = {
     name: "Join Us",
   },
   secondary: {
-    href: "/vex/game",
+    href: "/outreach/calendar",
     name: "Event Calendar",
   },
 };

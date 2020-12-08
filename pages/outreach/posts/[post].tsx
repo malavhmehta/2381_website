@@ -1,9 +1,12 @@
 import { getAllPostIds, getPostData } from "../../../util/posts";
 import { media, theme } from "../../../styles";
 
+import Container from "../../../components/container";
 import Head from "next/head";
+import Hero from "../../../components/hero/pattern";
 import React from "react";
 import ReactMarkdown from "react-markdown";
+import Related from "../../../components/related";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
 import styled from "styled-components";
 
@@ -93,7 +96,7 @@ export default function Post({ postData }) {
     strong: (props) => (
       <Text style={{ fontWeight: 700, display: "inline" }} {...props} />
     ),
-    thematicBreak: <hr />,
+    thematicBreak: (props) => <hr {...props} />,
     blockquote: (props) => <Blockquote {...props} />,
     delete: (props) => <Text style={{ fontWeight: 700 }} {...props} />,
     link: (props) => <StyledLink {...props} />,
@@ -117,16 +120,47 @@ export default function Post({ postData }) {
     ),
   };
 
+  const hero = {
+    heading: postData.title,
+    lead: postData.summary,
+    imageSrc: postData.image,
+    primary: {
+      href: "/join",
+      name: "Join Us",
+    },
+    secondary: {
+      href: "/outreach/posts",
+      name: "All Posts",
+    },
+  };
+
+  const related = {
+    links: [
+      {
+        name: "Outreach Programs",
+        href: "/outreach",
+      },
+      {
+        name: "Calendar",
+        href: "/outreach/calendar",
+      },
+    ],
+  };
+
   return (
-    <div className="container">
+    <>
       <Head>
-        <title>Post - 2381 Robotics</title>
+        <title>{postData.title} - 2381 Robotics</title>
       </Head>
-      <ReactMarkdown
-        source={postData.htmlContent}
-        renderers={renderers}
-      ></ReactMarkdown>
-    </div>
+      <Hero {...hero} />
+      <Container cls="mt-5 pt-3">
+        <ReactMarkdown
+          source={postData.htmlContent}
+          renderers={renderers}
+        ></ReactMarkdown>
+      </Container>
+      <Related {...related} />
+    </>
   );
 }
 
