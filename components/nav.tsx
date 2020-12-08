@@ -69,16 +69,6 @@ export const links = [
   {
     name: "Resources",
     href: "/resources",
-    nested: [
-      {
-        name: "Tips",
-        href: "/tips",
-      },
-      {
-        name: "Files",
-        href: "/files",
-      },
-    ],
   },
   {
     name: "Outreach",

@@ -2,7 +2,6 @@ import { Background, Label as Title } from "./image";
 import { media, theme } from "../../styles";
 
 import Fade from "react-reveal/Fade";
-import { lighten } from "polished";
 import styled from "styled-components";
 
 const { colors, fontSizes } = theme;
@@ -17,18 +16,20 @@ type CardProps = {
 const Card = ({ title, description, detail, tags }: CardProps) => (
   <Background>
     <Fade bottom>
-      <Title>{title}</Title>
-      {detail && <Detail>{detail}</Detail>}
-      <Wrapper>
-        <Description>{description}</Description>
-        {tags && (
-          <Tags>
-            {tags.map((tag: string) => (
-              <Tag>{tag}</Tag>
-            ))}
-          </Tags>
-        )}
-      </Wrapper>
+      <div>
+        <Title>{title}</Title>
+        {detail && <Detail>{detail}</Detail>}
+        <Wrapper>
+          <Description>{description}</Description>
+          {tags && (
+            <Tags>
+              {tags.map((tag: string) => (
+                <Tag>{tag}</Tag>
+              ))}
+            </Tags>
+          )}
+        </Wrapper>
+      </div>
     </Fade>
   </Background>
 );
