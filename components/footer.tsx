@@ -1,4 +1,4 @@
-import { Instagram, Mail } from "react-feather";
+import { Instagram, Mail, Youtube } from "react-feather";
 import { media, theme } from "../styles";
 
 import Fade from "react-reveal/Fade";
@@ -24,6 +24,9 @@ const Footer = () => (
                 </Social>
                 <Social href="mailto:hello@2381.ca">
                   <Mail size="21px" />
+                </Social>
+                <Social href="https://www.youtube.com/channel/UCHB6SeUT8tRKPbdgq9At18w">
+                  <Youtube size="21px" />
                 </Social>
               </Socials>
             </div>

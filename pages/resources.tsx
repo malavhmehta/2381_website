@@ -84,8 +84,8 @@ const links = [
       "Electronics, hardware, and software information made public by Purdue Sigbots for the VRC, VEXU, and VEX AI Challenges.",
   },
   {
-    href: "https://www.vexrobotics.com/",
-    title: "VEX Website",
+    href: "https://kb.vex.com/hc/en-us ",
+    title: "VEX Knowledgebase",
     description:
       "Resources for everything VEX-related: game announcements, robot parts, programs, etc.",
   },
