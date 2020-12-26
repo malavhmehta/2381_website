@@ -33,16 +33,16 @@ const about = {
 
 const stats = [
   {
-    value: 5,
+    value: 6,
     label: "excellence awards",
   },
   {
-    value: 6,
+    value: 7,
     label: "robot skills championship awards",
   },
   {
     pre: "#",
-    value: 4,
+    value: 1,
     label: "global world skills standings",
   },
 ];
