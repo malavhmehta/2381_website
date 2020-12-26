@@ -5,7 +5,7 @@ summary: "Provincewide shutdown in Ontario, Canada..."
 image: "https://i.cbc.ca/1.5846947.1608297334!/cpImage/httpImage/image.jpg_gen/derivatives/16x9_780/doug-ford-ontario-premier-covid-19.jpg"
 ---
 
-## COIVD-19 Lockdown
+## COVID-19 Lockdown
 
 The Ontario government has decided to lockdown Ontario from December 26, 2020 for at least 28 subsequent days (January 25, 2020). Here is the exact reasoning provided by the government as justification for this lockdown:
 
