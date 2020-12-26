@@ -100,19 +100,12 @@ const seasonId = 139;
 const upcomingEvents = [
   // 3 events
   {
-    name: "VRC Remote Skills Only Tournament",
-    date: "12/05/2020",
-    place: "Toronto, Ontario, Canada",
+    name:
+      "VRC 'Merry VEXmas' hosted by VHS Robotics, Blended MS & HS, Remote Skills",
+    date: "12/19/2020",
+    place: "Wisconsin, USA",
     url:
-      "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-20-2473.html",
-    teams: ["2381C"],
-  },
-  {
-    name: "VEX MN December Skills-Only Remote Live",
-    date: "12/12/2020",
-    place: "East Grand Forks, Minnesota, United States",
-    url:
-      "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-20-2906.html",
+      "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-20-3015.html",
     teams: ["2381C"],
   },
 ];
@@ -127,7 +120,7 @@ function Home({ posts }) {
       <Container cls="mb-5 pb-5">
         <Image
           alt="2381 Robotics Team"
-          src="https://i.ibb.co/6sBSc9X/IMG-1504-2-1.jpg"
+          src="https://i.ibb.co/CMghFYT/2381c-robotics.jpg"
         />
       </Container>
 

@@ -159,15 +159,8 @@ const mentors = {
 
 const teacher = {
   title: "Our Teacher Supervisor",
-  content: (
-    <>
-      As the teacher supervisor for 2381, Mr. Hudson has stuck around for the
-      entire history of 2381, volunteering and supervising every single
-      competition that our teams have participated in. Without Mr. Hudson, our
-      organization would not exist and we greatly appreciate him for his support
-      and guidance!
-    </>
-  ),
+  content: `As the teacher supervisor for 2381, Mr. Hudson has stuck around for the entire history of 2381, volunteering and supervising every single competition that our teams have participated in. Without Mr. Hudson, our organization would not exist and we greatly appreciate him for his support and guidance!`,
+  imageSrc: "https://i.ibb.co/nR9vbHx/hudson.jpg",
 };
 
 const related = {
@@ -203,7 +196,7 @@ export default function About() {
       <Details {...club} />
       <SectionTeam {...mentors} />
       <div className="mt-5 pt-5" />
-      <SectionText {...teacher} />
+      <SectionImage {...teacher} />
       <Related {...related} />
     </>
   );
