@@ -33,11 +33,11 @@ const about = {
 
 const stats = [
   {
-    value: 3,
+    value: 5,
     label: "excellence awards",
   },
   {
-    value: 4,
+    value: 6,
     label: "robot skills championship awards",
   },
   {
