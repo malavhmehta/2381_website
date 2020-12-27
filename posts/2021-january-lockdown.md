@@ -13,4 +13,4 @@ The Ontario government has decided to lockdown Ontario from December 26, 2020 fo
 
 ## Impact on 2381
 
-All 2381 teams are from Ottawa, Ontario. As a result of this lockdown, no two member will be able to meet under one roof. Consequently, we will not be able to participate in upcoming evens. Unfortunately, this means that 2381C will no longer be able to hold their #1 Robot Skills ranking (with a 250 score as of 19 December 2020).
+All 2381 teams are from Ottawa, Ontario. As a result of this lockdown, no two member will be able to meet under one roof. Consequently, we will not be able to participate in upcoming evens. Unfortunately, this means that 2381C will no longer be able to defend their #1 Robot Skills ranking (with a 250 score as of 19 December 2020).

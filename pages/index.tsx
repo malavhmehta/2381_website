@@ -68,11 +68,11 @@ const stats = [
       "seasons of VRC: In The Zone, Turning Point, Tower Takeover, Change Up",
   },
   {
-    value: 23,
+    value: 25,
     label: "VEX tournaments in which 2381 has competed",
   },
   {
-    value: 32,
+    value: 36,
     label: "awards received by the 2381 teams",
   },
 ];

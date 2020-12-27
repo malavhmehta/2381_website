@@ -152,7 +152,7 @@ const mentors = {
       imageSrc: "https://i.ibb.co/nkMD0sL/seen.png",
       title: "Sean D'Souza",
       description:
-        "Programming Mentor — As the co-founder of the 2381 Robotics Organization, Sean has been a part of 2381 since the 2017 In the Zone season as a part of team 2381C. His experience in programming has been very useful in teaching new members about the fundamentals of robotics programming.",
+        "Programming Mentor — Sean has been a part of 2381 since the 2017 In the Zone season as a part of team 2381C. His experience in programming has been very useful in teaching new members about the fundamentals of robotics programming.",
     },
   ],
 };
