@@ -42,7 +42,7 @@ const stats = [
   },
   {
     pre: "#",
-    value: 1,
+    value: 9,
     label: "global world skills standings",
   },
 ];

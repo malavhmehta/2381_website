@@ -100,12 +100,27 @@ const seasonId = 139;
 const upcomingEvents = [
   // 3 events
   {
-    name:
-      "VRC 'Merry VEXmas' hosted by VHS Robotics, Blended MS & HS, Remote Skills",
-    date: "12/19/2020",
-    place: "Wisconsin, USA",
+    name: "VEX MN February Skills-Only Remote Live",
+    date: "01/29/2021",
+    place: "Minnesota, USA",
     url:
-      "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-20-3015.html",
+      "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-20-3110.html#general-info",
+    teams: ["2381C"],
+  },
+  {
+    name: "VRC, Love for Robots Skills Challenge-Hybrid",
+    date: "02/10/2021",
+    place: "Remote",
+    url:
+      "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-20-3108.html",
+    teams: ["2381C"],
+  },
+  {
+    name: "Maple Leaf Skills-Only Tournament #4",
+    date: "02/22/2021",
+    place: "Remote",
+    url:
+      "https://www.robotevents.com/robot-competitions/vex-robotics-competition/RE-VRC-20-3114.html",
     teams: ["2381C"],
   },
 ];

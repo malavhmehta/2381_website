@@ -41,7 +41,7 @@ const stats = [
     label: "robot skills championship awards",
   },
   {
-    value: -1,
+    value: 150,
     label: "global world skills standings",
   },
 ];
