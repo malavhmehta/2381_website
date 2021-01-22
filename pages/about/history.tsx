@@ -128,7 +128,7 @@ const sections = {
         <br />
         2381Y: Despite being a freshman team, they quickly demonstrated their
         capabilities in the robot skills challenge, being crowned Robot Skills
-        Champion at the Lockheed Martin Ontario Second VE EDR Qualifier,
+        Champion at the Lockheed Martin Ontario Second VEX EDR Qualifier,
         qualifying for provincials.
       </>
     ),
