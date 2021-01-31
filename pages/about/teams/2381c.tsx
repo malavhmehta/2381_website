@@ -12,7 +12,7 @@ import hashCode from "../../../util/hash";
 const hero = {
   heading: "Team 2381C",
   lead:
-    "2381C is on of 2381's oldest teams, established since our 2381's first year competing in VEX.",
+    "2381C is one of 2381's oldest teams, established since our 2381's first year competing in VEX.",
   imageSrc: "https://i.ibb.co/C20Cht2/2381c.jpg",
   primary: {
     href: "/join",
