@@ -1,30 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# 2381-website
 
-## Getting Started
+## About
 
-First, run the development server:
+2381 Kernel Bye Robotics is a high school VEX robotics club run at Colonel By Secondary School in Ottawa, Canada. This website, located at [2381.tech](2381.tech), was created to serve as an information repository for our robotics club and to provide valuable knowledge about VEX Robotics for newer members.
 
-```bash
-npm run dev
-# or
-yarn dev
+## Running locally
+
+First clone this repository:
+
+```shell
+$ git clone https://github.com/malav-mehta/2381-website.git
+$ cd 2381-website
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Next, install the dependencies and build the application:
 
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
+```shell
+$ yarn install
+```
 
-## Learn More
+Then, start the project by running:
 
-To learn more about Next.js, take a look at the following resources:
+```shell
+$ yarn start
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Finally, open your browser to [localhost:3000](http://localhost:3000) to view the website.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+## Tech stack
 
-## Deploy on Vercel
+- [React](https://reactjs.org/)
+- [Next](https://nextjs.org/)
+- [Create-Next-App](https://nextjs.org/docs/api-reference/create-next-app)
+- [Styled-Components](https://styled-components.com/)
+- [React-Markdown](https://github.com/remarkjs/react-markdown)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+If you find any bugs or have any questions, email me: [malavhmehta@outlook.com](mailto:malavhmehta@outlook.com).
