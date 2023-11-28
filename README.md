@@ -34,5 +34,3 @@ Finally, open your browser to [localhost:3000](http://localhost:3000) to view th
 - [Create-Next-App](https://nextjs.org/docs/api-reference/create-next-app)
 - [Styled-Components](https://styled-components.com/)
 - [React-Markdown](https://github.com/remarkjs/react-markdown)
-
-If you find any bugs or have any questions, email me: [malavhmehta@outlook.com](mailto:malavhmehta@outlook.com).
